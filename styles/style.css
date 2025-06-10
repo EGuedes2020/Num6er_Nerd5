@@ -1,0 +1,172 @@
+/* importar as 2 fontes que escolhi. São do google fonts, por isso é só copiar as urls que eles nos dão */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+:root {  
+    
+    --bs-body-bg: #0e051a;
+    
+    --bs-font-sans-serif: 'Bungee'; 
+    --font-family-monospace: 'Roboto Mono', monospace; /* não estou a conseguir usar esta fonte assim */
+    
+}
+
+.accentColor {
+    color: #82ff9e;
+}
+
+.darkColor {
+    color: #0e051a;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none; /* para não ter o ponto antes das <li> */
+    font-family: 'Roboto Mono', monospace;
+}
+
+li {
+    list-style-type: none; /* para não ter o ponto antes das <li> */
+    font-family: 'Roboto Mono', monospace;
+}
+
+ol {
+    list-style-type: none; /* para não ter o ponto antes das <li> */
+    font-family: 'Roboto Mono', monospace;
+}
+
+footer {
+    background-color: #0e051a;
+}
+
+.btn-card {
+    background-color: #0dcaf0;
+    color: #0e051a;
+}
+
+
+.btn-card:hover {
+    background-color: #82ff9e;
+    color: #0e051a; 
+}
+
+.card {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: whitesmoke;
+    background-color: #0e051a;
+    min-width: 230px;
+}
+
+.card-header {
+    color: #0dcaf0;
+    font-family: 'Bungee';
+    font-size: 16px;
+    border-bottom: 2px dashed whitesmoke;
+}
+
+.card-body {
+    background-color: wh;
+    color: #0e051a;
+}
+
+input {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.meuEstiloDiv {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: whitesmoke;
+    background-color: #0e051a;
+    padding: 28px;
+    margin-inline: 10px;
+}
+
+.form-text {
+    font-family: 'Roboto Mono', monospace;
+    color: #f5f5f596;
+    font-size: small;
+}
+
+select {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+select:disabled {
+    color: #00000086;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+.form-label {
+    font-family: 'Roboto Mono', monospace;
+    color: whitesmoke;
+}
+
+img {
+    border-radius: 4px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #82ff9e;
+    padding: 2px;
+}
+
+.liHist {
+    border-bottom: 3px dashed #82ff9d86;
+    padding-top: 14px;
+}
+
+.histCat {
+    color: #f5f5f585;
+}
+
+hr {
+    border-top: 3px dashed #82ff9d86;
+}
+
+.erroMsg {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #dc3545;
+    background-color: #0e051a;
+    padding: 20px;
+}
+
+
+
+
+
+/* pré-definidos pelo bootstrap -- aqui presentes para o caso de eu os ter de usar manualmente por css
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+
+  --bs-primary: #0d6efd;
+
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+
+  --bs-info: #0dcaf0;
+
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+/*
+

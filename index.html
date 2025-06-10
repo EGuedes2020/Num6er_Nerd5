@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Num6er Nerd5</title>
+
+    <!-- Para usar o estilo/bibliotecas do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- O meu css -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Para usar os icons do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <!-- Para mudar o mini icon que aparece na tab do browser -->
+    <link rel="icon" href="icons/robot.svg">
+
+</head>
+<body>
+
+    <!-- Sem isto, elementos interativos do Bootstrap, como a navbar(quando em dispositivos menores) não funciona... simplesmente não acontece nada quando carregamos no icon do menu(não aparecem os elementos dentro do menu) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary px-2 mb-5">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="index.html">Num<span class="accentColor">6</span>er Nerd<span class="accentColor">5</span></a> <!--Se não meter os números dentro de "span", eles vau dar um enter entre os números e o texto-->
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="math.html">Math</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dates
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="dates_day.html">Day of The Month</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="dates_year.html">Year</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="trivia.html">Trivia</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="random.html">Random</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="game.html">Game</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <!--Navbar-->
+
+    <!--Sobre-->
+    <div class="container my-5 px-3 mt-5 pt-5">
+
+        <!-- Mensagem de boas-vindas -->
+        <div class="display-1 text-info text-center"><i class="bi bi-robot"></i></div>
+        <br>
+        <div class="display-4 text-white text-center">Hello fellow <span class="accentColor">Nerd</span>!</div>
+        <br>
+        <p class="text-center">Do you want to discover <span class="accentColor">new facts</span>?_ <br> You can do it here using <span class="text-info">NUMBERS</span>!_</p>
+        <!-- Mensagem de boas-vindas -->
+
+        <!-- Explicação -->
+        <div class="container text-white my-5 py-4 justify-content-center">
+            <div class="row">
+
+                 <!-- Descobrir por tópicos-->
+                <div class="col col-sm-12 col-md-12 col-lg-5">
+                With <span class="accentColor">topics</span>:
+
+                    <!-- Descobrir por tópicos (cards) -->
+                    <div class="row row-cols-md-2 row-cols-lg-2 row-cols-sm-1 pt-3 g-4">
+
+                        <div class="col">
+            
+                            <div class="card">
+                                <p class="card-header">Math</p>
+                                <div class="card-body">
+                                    <p class="card-text">Get a <strong class="accentColor">mathematical property</strong> about a number.</p>
+                                    <a href="math.html" class="btn btn-card fs-6 text-end">Go</a>
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                        <div class="col">
+            
+                            <div class="card">
+                                <p class="card-header">Dates</p>
+                                <div class="card-body">
+                                    <p class="card-text">Get a fact about a <strong class="accentColor">year</strong> or a <strong class="accentColor">specific day</strong>.</p>
+                                    <a href="dates_day.html" class="btn btn-card fs-6 text-end">Day</a>
+                                    <a href="dates_year.html" class="btn btn-card fs-6 text-end">Year</a>
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                        <div class="col">
+            
+                            <div class="card">
+                                <p class="card-header">Trivia</p>
+                                <div class="card-body">
+                                    <p class="card-text">Get a <strong class="accentColor">trivia fact</strong> about a number.</p>
+                                    <a href="trivia.html" class="btn btn-card fs-6 text-end">Go</a>
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                        <div class="col">
+            
+                            <div class="card">
+                                <p class="card-header">Random</p>
+                                <div class="card-body">
+                                    <p class="card-text">Get a trivia fact of a <strong class="accentColor">random</strong> number.</p>
+                                    <a href="random.html" class="btn btn-card fs-6 text-end">Go</a>
+                                </div>
+                            </div>
+            
+                        </div>
+            
+            
+                    </div>
+                    <!-- Descobrir por tópicos (cards) -->
+
+                </div>
+                <!-- Descobrir por tópicos -->
+
+                <!-- ou -->
+                <div class="col col-sm-12 col-md-12 col-lg-2 text-center p-5">
+                or
+                </div>
+                <!-- ou -->
+                
+                <!-- Game -->
+                <div class="col col-sm-12 col-md-12 col-lg-5 text-end">
+                With a <span class="accentColor">Game</span>:
+
+                <!-- Descobrir por jogos (cards) -->
+                <div class="row row-cols-md-1 row-cols-lg-1 row-cols-sm-1 pt-3 g-4">
+
+                    <div class="col">
+        
+                        <div class="card">
+                            <p class="card-header">Guess the Year</p>
+                            <div class="card-body">
+                                <p class="card-text">I'll give you a <strong class="accentColor">historical fact</strong> and you will <strong class="text-info">guess the year</strong> it happened.</p>
+                                <a href="game.html" class="btn btn-card fs-6 text-end">Go</a>
+                            </div>
+                        </div>
+
+                        <div class="card mt-4">
+                            <div class="card-body">
+                                <p class="card-text">There will <strong class="accentColor">be more</strong> in <strong class="text-info">the future</strong>!</p>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    
+                </div>
+                <!-- Descobrir por jogos (cards) -->
+
+                </div>
+                <!-- Game -->
+
+            </div>
+        </div>
+        <!-- Explicação -->
+        
+        
+    </div>
+    <!--Sobre-->
+
+
+    <!--Footer-->
+    <footer class="border-top border-whithe pt-2">
+        <p class="text-center text-white"><small>© 2022 Copyright: Ema Guedes</small></p>
+        <!-- Copyright -->
+    </footer>
+    <!--Footer-->
+
+
+</body>
+</html>
